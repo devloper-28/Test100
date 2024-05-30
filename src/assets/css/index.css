@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{margin:0; padding:0; font-family: "Poppins", sans-serif;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+h3{font-family: Poppins; font-size: 20px; font-weight: 500; line-height: 30px; text-align: left; margin-bottom: 12px; display:block;}
+p {font-family: Poppins; font-size: 14px; font-weight: 300; line-height: 24px; text-align: justify;}
+
+
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.MapDiv {
+    padding: 5px 25px;
+    zoom: 91%;
+}
+.CardBox {padding-bottom: 0px;}
+.CardBox h4{color:#B27E02;font-size: 20px;font-weight: 600;line-height: 37px;display: flex;align-items: center;}
+.CardBox h6 {font-size: 12px;font-weight: 500;color: #6B6B6B;line-height: 26px;}
+.CardBox .Black{font-size: 14px; font-weight: 500; line-height: 21px;}
+
+.BtnGroup {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.BtnGroup a {width: 26%;}
+
+
+p {font-family: Poppins;font-size: 14px;font-weight: 300;line-height: 24px;text-align: justify;}
+
+.modal.show .modal-dialog {transform: none; max-width: 97%;}
+.modal-content{position:relative;}
+.modal-content .btn-close {position: absolute; right: 30px; top: 30px; height: 20px; width: 20px; border-radius: 50%; padding: 0;}
+
+.Amenities{padding: 3px 0px;margin: 11px 0;}
+
+.Info a{text-align: center; display: block; text-decoration: none; border: 1px solid #B27E02; padding: 10px 8px; border-radius: 7px;}
+.Info a.BdrBtn {color: #B27E02;}
+.Info a.DarkBtn{background: #B27E02; color:#fff;}
+.Info a.DarkBtn {background: #B27E02; color: #fff; width: 42%;}
+.ModalBtn.DarkBtn {
+    background: #B27E02;
+    color: #fff;
+    width: 42%;
+    position: absolute;
+    top: 50%;
+    padding: 15px 20px;
+    border: 0;
+    text-align: center;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
+}
+.BdrNone{border-right:0;}
+.MainCard {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.CardBox {
+    position: relative;
+    padding: 0;
+    border-right: 1px solid #ddd;
+    width: 149px;
+    height: 70px;
+    padding: 13px 3px;
+}
+.Boxs{
+  border-top:1px solid #ddd;
+  margin-top:10px;
+}
+hr {
+    margin: 8px 0;
+    border-top: 1px solid #ABABAB;
+}     
+.Amenities span {
+    font-size: 14px;
+}
+
+.CardBox img {
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
+    object-fit: contain;
+}
+@media(max-width:1850px){
+  .Amenities {padding: 0px 0px;}
+  .CardBox h4 {font-size: 17px; line-height: 25px;}
+}
+@media (max-width: 1799px) {
+    .Amenities {
+        padding: 3px 0px;
+        margin: 5px 0;
+    }
+    .BtnGroup {
+        margin-top: 10px;
+    }
+    .MapDiv {
+        padding: 5px 10px;
+        zoom: 85%;
+    }
+    .CardBox {
+        padding: 5px 3px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:1499px){
+    .CardBox {
+        width: 137px;
+    }
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .Amenities {
+        padding: 4px 0px;
+        margin: 0px 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width:1470px){
+    .CardBox {
+        width: 127px;
+    }  
+    
+}
+
+@media (max-width: 1399px) {
+     
+      .Amenities {
+          padding: 4px 0px;
+          margin: 0px 0;
+      }
+      .CardBox {
+        width: 120px;
+    }
+    .CardBox h6 {
+        font-size: 10px;
+        line-height: 26px;
+    }
+    .Amenities span {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+  
+  }
+
+  @media (max-width: 1360px) {
+    .CardBox {
+        width: 80%;
+    }
+}
+
+@media(max-width:1299px){
+    .CardBox {
+        width: 94%;
+    }
+}
+
+@media (min-width: 767px) {
+    .Mobile{
+        display:none;
+    } 
+}
+    @media (max-width: 767px) {
+        .Navabr img {
+            width: 190px;
+            object-fit: contain;
+            transform-origin: left;
+            text-align: left;
+        }
+        .MapDiv {
+            padding: 5px 0;
+            margin-top: 100px;
+        }
+        .Desktop{
+            display:none;
+        }
+        .Navabr {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            padding: 0px 20px;
+            width: 100%;
+            background: #fff;
+            z-index: 1;
+            top: 0;
+            margin: 0;
+            box-shadow: 1px 1px 10px rgb(0 0 0 / 33%);
+        }
+        .CardBox {
+            width: 80%;
+            border: 0;
+        }
+        .Map{
+            margin-bottom:80px;
+        }
+        .modal-body {
+            padding: 0;
+        }
+.bannerImg {
+ 
+    margin-top: 75px;
+}
+    
+    .Navabr button {
+        width: 166px;
+        font-size: 16px;
+        height: 40px;
+        border: 1px solid orange;
+        color: #3D3D3D;
+        padding: 0 10px;
+        border-radius: 12px;
+        background: transparent;
+    }
+    .Navabr img {
+        height: 75px;
+    }
+    .Info.Mobile .BtnGroup {
+        display: flex;
+        position: fixed;
+        box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+        padding: 19px 16px;
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+        background: #fff;
+    }
+    .Info.Mobile .BtnGroup a {
+        width: 48% !important;
+    }
+    .p-sm-0{
+        padding:0;
+    }
+    
+    .modal.show .modal-dialog {
+        transform: none;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .Amenities {
+        padding: 5px 2px;
+        margin: 10px 0;
+    }
+    .bannerImg {
+        margin-top: 105px;
+    }
+    .Amenities .img-fluid {
+        height: 25px;
+    }
+    .MapDiv {
+        padding: 5px 0px;
+        zoom: 100%;
+    }
+    .Info a {
+        font-size: 13px;
+    }
+    .ModalBtn.DarkBtn {
+        width: max-content;
+    }
+    .bannerImg {
+        margin-top: 20px;
+    }
+    .modal {
+        background: #fff;
+    }
+}
+@media(max-width: 575px){
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px 0px;
+}
+.MapDiv {
+    padding: 5px 0;
+}
+.BtnGroup {
+    display: block;
+
+}
+.BtnGroup a {
+    width: 100%!important;
+    margin-bottom:10px;
+}
+.Amenities img {
+    height: 30px;
+}
+
+.Amenities span {
+    font-size: 12px!important;
+}
+.Navabr button {
+        width: 126px;
+        font-size: 13px;
+        height: 30px;
+        border: 1px solid #A37801;
+        color: #3D3D3D;
+        padding: 0 4px;
+        border-radius: 12px;
+        background: transparent;
+    }
+    .Amenities span {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    
+.Navabr img {
+    width: 120px; 
+}
+    .Navabr button {
+        width: 126px;
+        font-size: 13px;
+        height: 30px;
+        border: 1px solid #A37801;
+        color: #3D3D3D;
+        padding: 0 4px;
+        border-radius: 12px;
+        background: transparent;
+    }
+}
